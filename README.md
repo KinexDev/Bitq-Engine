@@ -6,4 +6,4 @@ A simple engine i made in C# as a learning experience, this "engine" (it's more 
 I used luau for the scripting via my own bindings, silk.net for renderering via glfw and opengl and for audio via openal and i'm using the bullet physics engine. it uses a similar structure to unity with it being gameobject and components.
 
 I don't think im gonna revisit this project but it is definitely cool in my opinion.
-To get rid of the editor just get rid of the editor exe.
+To get rid of the editor just get rid of the editor exe and thats a built game
