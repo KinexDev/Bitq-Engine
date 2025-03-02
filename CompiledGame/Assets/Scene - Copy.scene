@@ -1,0 +1,2319 @@
+{
+  "$type": "Bitq.Core.Scene, Bitq.Runtime",
+  "gameObjects": {
+    "$type": "System.Collections.Generic.List`1[[Bitq.Core.GameObject, Bitq.Runtime]], System.Private.CoreLib",
+    "$values": [
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Player",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": [
+              "93b7c4b3-f3a5-4dcd-89e7-33c389e2581e",
+              "cbee023d-4e8d-4ca9-bae8-85adf2eabf94"
+            ]
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -86.73014,
+            "Y": 1.0794315,
+            "Z": -1.3501916
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.99971986,
+            "Y": 0.99999976,
+            "Z": 0.9997363
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": -0.0,
+            "Y": 0.70710677,
+            "Z": -0.0,
+            "W": -0.70710677,
+            "IsIdentity": false
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.Script, Bitq.Runtime",
+              "ScriptPath": "Assets/test.luau",
+              "guid": "a81042a1-ba6e-4436-a178-a545da5c3e97"
+            },
+            {
+              "$type": "Bitq.Core.CharacterController, Bitq.Runtime",
+              "stepHeight": 0.35,
+              "walkSpeed": 4.0,
+              "jumpSpeed": 11.0,
+              "gravity": 3.0,
+              "capsuleHeight": 2.0,
+              "capsuleRadius": 0.5,
+              "guid": "f67c12ac-81b0-4318-b46b-bfd323fab799"
+            }
+          ]
+        },
+        "guid": "114962bf-9ad2-4d72-be6d-997ad99f5d02",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Camera",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "114962bf-9ad2-4d72-be6d-997ad99f5d02",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": -0.00018060207,
+            "Z": 0.0
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 1.0000058,
+            "Y": 1.0000101,
+            "Z": 1.0000067
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.Camera, Bitq.Runtime",
+              "Fov": 70.0,
+              "Near": 0.1,
+              "Far": 10000.0,
+              "guid": "8d024b68-7b07-41ca-9187-53f65573910a"
+            }
+          ]
+        },
+        "guid": "93b7c4b3-f3a5-4dcd-89e7-33c389e2581e",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -2.6664743,
+            "Y": 2.4866285,
+            "Z": -2.7696404
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "6ec5b982-fbaf-4bd7-8ad3-6fca1ddbcbb4",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -7.4796033,
+            "Y": 0.15109432,
+            "Z": -1.3100147
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "447d2a16-0190-491c-b41b-081b08fa925e",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -10.298526,
+            "Y": 2.0283043,
+            "Z": 0.4321909
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "d64aa2b8-4a87-4f5e-87a1-848be91fcaeb",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -16.674818,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "7e7a35e6-7a8e-4c76-b57d-ef61f5994325",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -23.595074,
+            "Y": -6.5,
+            "Z": -1.3293504
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "6c7160c3-aa9f-474e-8cb7-1b39a26b81f5",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -27.541565,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "957c7acb-9076-4aae-a93f-a6b3a00239c0",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -31.290037,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "29314252-3624-486d-a15d-03169b6f9856",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -34.194695,
+            "Y": 0.40194976,
+            "Z": -1.3514833
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "ed4b1bc1-7aab-482c-944c-1eec569da7fa",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 4.4254684,
+            "Y": 0.15109432,
+            "Z": -1.3100147
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 4.725517,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "b3d93dd9-100d-408b-bfdf-6f8c4dcd7f10",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -14.362814,
+            "Y": 2.0283043,
+            "Z": -2.9006414
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "c5797d9c-71b6-4845-89c3-f10a8b9c61b8",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -19.940714,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "25d2e5b2-5162-486d-b96f-85bcee4a3a09",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -38.359673,
+            "Y": 2.7216334,
+            "Z": -2.8096418
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "891f9aae-98d8-4cec-8493-cb82de34f674",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -42.891068,
+            "Y": 0.15109432,
+            "Z": -1.3100147
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "12a81494-6d2b-4cbe-a9b5-6f237353c6d6",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -46.898148,
+            "Y": 2.0283043,
+            "Z": 0.4321909
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "2270298f-d865-4148-ae1a-80e8096e4a6c",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -50.133728,
+            "Y": 3.3302236,
+            "Z": -2.9006414
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "52311871-54ee-47cf-95a9-9f9e58b6213d",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -52.53789,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "f8131983-039e-4d59-abcf-420ec00eebe6",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -56.212276,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "1ad56a0a-8a54-4806-a83d-7c8230dbdfa4",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -59.69143,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "51443461-684b-431a-9d23-eb2f98e3200b",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -63.174843,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "f54fe4fb-e2e0-4230-a070-3f2fa352e29d",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -66.661674,
+            "Y": -6.5,
+            "Z": -1.3293502
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.48299822,
+            "Y": 7.1216617,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "9a9d06d1-2791-4831-8738-97892f1e48e6",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -72.20297,
+            "Y": 0.15109432,
+            "Z": -1.3451004
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 4.557443,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "f8a20494-07b9-4c85-aeb2-8e29fda1de2b",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -78.713326,
+            "Y": 2.0283043,
+            "Z": 0.4321909
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "dead6d16-fe9a-4bac-8cf5-8f2c84298354",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -82.39206,
+            "Y": 2.330925,
+            "Z": -2.9006414
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 2.1253211,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "37f964d2-3ab0-48c8-a12a-d9428c1b6e24",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Skybox",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "114962bf-9ad2-4d72-be6d-997ad99f5d02",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 5000.0,
+            "Y": 5000.0,
+            "Z": 5000.0
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": -0.70710677,
+            "Y": -4.3332595E-05,
+            "Z": -0.70710677,
+            "W": 4.3332595E-05,
+            "IsIdentity": false
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/hurglebox.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/spongehurgle.png",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "27e852c9-9570-4589-b92b-bca2c1dd9868"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "e82a7c1b-666d-4422-ad8f-633fb6eaf9f6"
+            }
+          ]
+        },
+        "guid": "cbee023d-4e8d-4ca9-bae8-85adf2eabf94",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Cube",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -89.52722,
+            "Y": 0.15109432,
+            "Z": -1.3100147
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 4.725517,
+            "Y": 0.23351137,
+            "Z": 0.42170477
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/Models/cube.fbx",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0,
+                  "W": 1.0
+                },
+                "baseTexture": {
+                  "$type": "Bitq.Rendering.Texture, Bitq.Runtime",
+                  "Path": "Assets/bliss.jpg",
+                  "Type": 0
+                },
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "98e8f0db-c447-4424-abce-090f7b3bfb8c"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "651c8bf5-13e3-4599-96c6-7252ae2ae70a"
+            },
+            {
+              "$type": "Bitq.Core.StaticBody, Bitq.Runtime",
+              "mass": 1.0,
+              "LinearDamping": 0.0,
+              "AngularDamping": 0.0,
+              "Resitution": 0.0,
+              "Friction": 0.5,
+              "guid": "9494a258-950d-43b7-8baa-d3db1ae4413e"
+            }
+          ]
+        },
+        "guid": "bdf93d8c-dfbf-453e-86c1-9a045df7c3f5",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Bike",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": -93.37691,
+            "Y": 0.3809776,
+            "Z": -1.2462294
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 5.732287,
+            "Y": 5.732287,
+            "Z": 5.732287
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Core.MeshRenderer, Bitq.Runtime",
+              "meshPath": "Assets/bike.obj",
+              "material": {
+                "$type": "Bitq.Rendering.Material, Bitq.Runtime",
+                "baseColor": {
+                  "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+                  "X": 0.16176468,
+                  "Y": 0.16176468,
+                  "Z": 0.16176468,
+                  "W": 1.0
+                },
+                "baseTexture": null,
+                "doubleSided": false,
+                "transparent": false,
+                "unlit": true
+              },
+              "guid": "622cb878-7c7b-4f10-8945-488b0bc2764d"
+            },
+            {
+              "$type": "Bitq.Core.BoxCollider, Bitq.Runtime",
+              "Size": {
+                "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "shape": null,
+              "guid": "02ecd0f9-a33e-48c6-90b1-f53fb434baee"
+            },
+            {
+              "$type": "Bitq.Core.Script, Bitq.Runtime",
+              "ScriptPath": "Assets/won.luau",
+              "guid": "fbfe4c01-c358-4906-a09f-f9898fb16d2e"
+            }
+          ]
+        },
+        "guid": "6a281f43-bb87-43f2-ac3a-3ebcad24f530",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "Song",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Runtime.Core.AudioSource, Bitq.Runtime",
+              "path": "Assets/fnafambiance.wav",
+              "loop": true,
+              "playOnLoad": true,
+              "guid": "209f612e-b17c-431a-9f23-8e97c969b3c0"
+            }
+          ]
+        },
+        "guid": "e219a5ef-759d-4321-9a54-a3f1ce984054",
+        "isActive": true
+      },
+      {
+        "$type": "Bitq.Core.GameObject, Bitq.Runtime",
+        "name": "YouWon",
+        "Transform": {
+          "$type": "Bitq.Core.Transform, Bitq.Runtime",
+          "parent": "00000000-0000-0000-0000-000000000000",
+          "children": {
+            "$type": "System.Collections.Generic.List`1[[System.Guid, System.Private.CoreLib]], System.Private.CoreLib",
+            "$values": []
+          },
+          "LocalPosition": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "LocalScale": {
+            "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "LocalRotation": {
+            "$type": "System.Numerics.Quaternion, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsIdentity": true
+          }
+        },
+        "components": {
+          "$type": "System.Collections.Generic.List`1[[Bitq.Core.Component, Bitq.Runtime]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Bitq.Runtime.Core.AudioSource, Bitq.Runtime",
+              "path": "Assets/won.wav",
+              "loop": false,
+              "playOnLoad": false,
+              "guid": "06fa20b2-0383-47ae-82a8-bb9c3edad59e"
+            }
+          ]
+        },
+        "guid": "e797fc4c-6bc0-4151-b638-708748950181",
+        "isActive": true
+      }
+    ]
+  },
+  "guid": "9ebd6dcd-c69f-45cf-ac52-2eb97ad02ccc"
+}
